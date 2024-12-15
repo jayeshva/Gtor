@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+               <string>com.googleusercontent.apps.650832165767-kjekc5iko93kess9371gakj4gvhno2kq</string>
+			</array>
+		</dict>
+		<dict/>
+	</array>
+   <key>GIDClientID</key>
+
+    <string>650832165767-kjekc5iko93kess9371gakj4gvhno2kq.apps.googleusercontent.com</string>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>tv68mn4p-3000.inc1.devtunnels.ms</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+    
+</dict>
+
+</plist>
