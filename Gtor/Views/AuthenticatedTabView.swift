@@ -29,5 +29,6 @@ struct AuthenticatedTabView: View {
                 }
             
         }
+        .tabViewStyle(.automatic)
     }
 }

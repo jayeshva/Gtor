@@ -47,9 +47,12 @@ struct GoogleDriveView: View {
                 }
             }
             .onAppear {
-                print("GoogleDriveView appeared with accessToken: \(viewModel.accessToken!)")
-                viewModel.loadDriveContents()
-                viewModel.filteredItems = viewModel.items
+                Task { await MainActor.run {
+                    print("GoogleDriveView appeared with accessToken: \(viewModel.accessToken!)")
+                    viewModel.loadDriveContents()
+                    viewModel.filteredItems = viewModel.items
+                }
+                }
             }
         }
     }
