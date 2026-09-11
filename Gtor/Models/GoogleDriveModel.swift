@@ -14,9 +14,7 @@ struct GoogleDriveFolder: Codable {
 }
 
 struct GoogleDriveFile: Codable {
-    let id: String
-    let name: String
-}
+
 
 
 struct GoogleDriveItem: Codable {
